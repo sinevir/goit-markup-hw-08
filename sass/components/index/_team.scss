@@ -1,0 +1,44 @@
+.team {
+    background-color: $background-color--section-second;
+
+    &__list {
+        @include centeredFlex(space-between);
+        @extend %list;
+    }
+
+    &__card {
+        background-color: $background-color--section-first;
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.19;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+    }
+
+    &__text {
+        padding: 30px 32px;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+        color: $color--dark-title;
+    }
+    
+    &__position {
+        margin-bottom: 16px;
+    }
+
+    &__button {
+
+        &--color {
+            color: $color--icon;
+        }
+    }
+
+      
+      
+}
+  

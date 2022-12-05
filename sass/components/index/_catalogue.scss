@@ -1,0 +1,42 @@
+.catalogue {
+    padding-top: 0;
+
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        color: $color--dark-title;
+        margin-bottom: 50px;
+    }
+
+    &__list {
+        @include centeredFlex(space-between);
+        @extend %list;
+    }
+      
+    &__item {
+        position: relative;
+    }
+    
+    &__label {
+        @include centeredFlex;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 370px;
+        height: 70px;
+        background: rgba(47, 48, 58, 0.8);
+    }
+
+    &__name {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $color--hero-title;
+    }
+      
+}
+  

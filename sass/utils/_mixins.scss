@@ -1,0 +1,6 @@
+@mixin centeredFlex($value: center) {
+    display: flex;
+    align-items: center;
+    justify-content: $value;
+        
+}

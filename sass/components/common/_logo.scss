@@ -1,0 +1,14 @@
+.logo {
+    display: inline-block;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+
+    &__part {
+        color: $color--second-text;
+    }
+}
+  
