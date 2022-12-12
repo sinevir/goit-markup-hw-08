@@ -2,11 +2,12 @@
     background-color: $background-color--hero;
 
     &__wrap {
-        display: flex;
+        display: block;
     }
 
     &__links {
-        padding: 60px 0;
+        padding-bottom: 60px;
+        text-align: center;
     }
     
     &__logo--color {

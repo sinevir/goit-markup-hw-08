@@ -1,8 +1,12 @@
 .join {
-    display: inline-block;
+    display: block;
     width: 206px;
-    padding-top: 72px;
-    margin-left: 93px;
+    // padding-top: 72px;
+    // margin-left: 93px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 60px; 
 
     &__title {
         font-weight: 700;

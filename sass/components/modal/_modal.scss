@@ -2,8 +2,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    min-width: 528px;
-    min-height: 581px;
+    width: 95%;
+    // min-height: 581px;
     background-color: $background-color--section-first;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -70,7 +70,7 @@
         resize: none;
         outline: none;
         margin-bottom: 20px;
-        font-size: 12px;
+        font-size: 14px;
         line-height: 1.17;
         letter-spacing: 0.01em;
         border: 1px solid rgba(33, 33, 33, 0.2);
@@ -79,7 +79,7 @@
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);   
         
         &:focus {
-            color: $color--second-text;
+            color: $color--dark-title;
         }
 
         &::placeholder {
@@ -90,7 +90,9 @@
     &__terms {
         display: flex;
         align-items: center;
-        margin-bottom: 30px;      
+        margin-bottom: 30px;
+        font-size: 12px;
+        line-height: 1.17;     
     }
 
     &__terms-input {

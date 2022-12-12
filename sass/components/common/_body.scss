@@ -12,26 +12,39 @@ h2, h3, p, ul {
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
-  width: 1200px;
+  max-width: 1600px;
   padding: 0 15px;
   margin: 0 auto;
+
+  @media (min-width:$mobile) {
+    width: $mobile;
+  }
+  @media screen and (min-width: 768px) {
+    width: $tablet;
+  }
 }
 
 .section {
-  padding: 94px 0;
+  // padding: 94px 0;
+  padding: 60px 0;
 }
 
 .titles {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   color: $color--dark-title;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  // @media screen and (max-width: $mobile) {
+  //   font-size: 28px;
+  //   margin-bottom: 30px;
+  // }
 }

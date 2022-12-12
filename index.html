@@ -12,12 +12,12 @@
     <header class="page-header">
       <div class="page-header__wrap container">
         <nav>
+          <div class="navigation__logo">
+            <a class="logo navigation__logo--color" href="./index.html">
+              <span class="logo__part">Web</span>Studio
+            </a>
+          </div>
           <ul class="navigation">
-            <li class="navigation__logo">
-              <a class="logo navigation__logo--color" href="./index.html">
-                <span class="logo__part">Web</span>Studio
-              </a>
-            </li>
             <li class="navigation__reference">
               <a class="navigation__link navigation__link--current" href="./index.html">Студія</a>
             </li>
@@ -45,15 +45,87 @@
             </a>
           </li>
         </ul>
+        <button class="menu-toggle js-open-menu"
+            type="button"
+            aria-expanded="false"
+            >
+            <svg width="40" height="40" aria-label="Меню сайту">
+              <use class="menu-toggle__icon" href="./images/icons.svg#menu"></use>
+            </svg>
+        </button>
+      </div>
+      <div class="menu-container js-menu-container" id="site-menu">
+        <button class="menu-toggle menu-toggle--position js-close-menu">
+          <svg width="40" height="40">
+            <use class="icon-cross" href="./images/icons.svg#cross"></use>
+          </svg>
+        </button>
+        <ul class="site-menu">
+          <li class="site-menu__item">
+            <a class="site-menu__link--current" href="./index.html">Студія</a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="#">Контакти</a>
+          </li>
+        </ul>
+        <div>
+          <ul class="contacts-menu">
+            <li class="contacts-menu__item">
+              <a class="contacts-menu__tel" href="tel:+380961111111">+38 096 111-11-11</a>
+            </li>
+            <li class="contacts-menu__item">
+              <a class="contacts-menu__mailto" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="socialnets-menu">
+            <li class="socialnets-menu__item">
+              <a class="socialnets-menu__link socialnets-menu__link--left"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >Instagram
+              </a>
+            </li>
+            <li class="socialnets-menu__item">
+              <a class="socialnets-menu__link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >Twitter
+              </a>
+            </li>
+            <li class="socialnets-menu__item">
+              <a class="socialnets-menu__link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >Facebook
+              </a>
+            </li>
+            <li class="socialnets-menu__item">
+              <a class="socialnets-menu__link socialnets-menu__link--right"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
       <!-- HERO -->
       <section class="hero overlay">
-        <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+        <div class="hero__wrap container">
+          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
         <button data-modal-open class="hero__button" type="button">
           Замовити послугу
         </button>
+        </div>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
@@ -106,7 +178,7 @@
                   class="modal__textarea"
                   name="feedback"
                   id="feedback"
-                  rows="8"
+                  rows="7"
                   placeholder="Введіть текст"
                 ></textarea>
               </div>
@@ -236,11 +308,20 @@
           <h2 class="titles">Наша команда</h2>
           <ul class="team__list">
             <li class="team__card">
-              <img
-                src="./images/ourteam1-demjanenko.jpg"
+              <img class="team__img"
+                srcset="
+                  ./images/team/id-dt@270.jpg 270w,
+                  ./images/team/id-dt@540.jpg 540w,
+                  ./images/team/id-mb@450.jpg 450w,
+                  ./images/team/id-mb@900.jpg 900w,
+                  ./images/team/id-tb@354.jpg 354w,
+                  ./images/team/id-tb@708.jpg 708w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team/id-mb@450.jpg"
                 alt="Ігор Дем'яненко"
-                width="270"
-                height="260"
+                width="450"
+                height="460"
               />
               <div class="team__text">
                 <h3 class="team__title">Ігор Дем'яненко</h3>
@@ -289,11 +370,18 @@
               </div>
             </li>
             <li class="team__card">
-              <img
-                src="./images/ourteam2-repina.jpg"
+              <img class="team__img"
+                srcset="
+                  ./images/team/or-dt@270.jpg 270w,
+                  ./images/team/or-dt@540.jpg 540w,
+                  ./images/team/or-mb@450.jpg 450w,
+                  ./images/team/or-mb@900.jpg 900w,
+                  ./images/team/or-tb@354.jpg 354w,
+                  ./images/team/or-tb@708.jpg 708w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/or-mb@450.jpg"
                 alt="Ольга Рєпіна"
-                width="270"
-                height="260"
               />
               <div class="team__text">
                 <h3 class="team__title">Ольга Рєпіна</h3>
@@ -342,11 +430,18 @@
               </div>
             </li>
             <li class="team__card">
-              <img
-                src="./images/ourteam3-tarasov.jpg"
+              <img class="team__img"
+                srcset="
+                  ./images/team/mt-dt@270.jpg 270w,
+                  ./images/team/mt-dt@540.jpg 540w,
+                  ./images/team/mt-mb@450.jpg 450w,
+                  ./images/team/mt-mb@900.jpg 900w,
+                  ./images/team/mt-tb@354.jpg 354w,
+                  ./images/team/mt-tb@708.jpg 708w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/mt-mb@450.jpg"
                 alt="Микола Тарасов"
-                width="270"
-                height="260"
               />
               <div class="team__text">
                 <h3 class="team__title">Микола Тарасов</h3>
@@ -395,11 +490,18 @@
               </div>
             </li>
             <li class="team__card">
-              <img
-                src="./images/ourteam4-yermakov.jpg"
+              <img class="team__img"
+                srcset="
+                  ./images/team/me-dt@270.jpg 270w,
+                  ./images/team/me-dt@540.jpg 540w,
+                  ./images/team/me-mb@450.jpg 450w,
+                  ./images/team/me-mb@900.jpg 900w,
+                  ./images/team/me-tb@354.jpg 354w,
+                  ./images/team/me-tb@708.jpg 708w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/me-mb@450.jpg"
                 alt="Михайло Єрмаков"
-                width="270"
-                height="260"
               />
               <div class="team__text">
                 <h3 class="team__title">Михайло Єрмаков</h3>
@@ -455,42 +557,42 @@
         <div class="container">
           <h2 class="titles">Постійні клієнти</h2>
           <ul class="clients">
-            <li>
+            <li class="clients__item">
               <a class="clients__name" href="#" aria-label="Ya & Co">
                 <svg class="clients__icon" width="41" height="47">
                   <use href="./images/icons.svg#icon-client-yaco"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients__item">
               <a class="clients__name" href="#" aria-label="Company Tagline Here">
                 <svg class="clients__icon" width="40" height="52">
                   <use href="./images/icons.svg#icon-client-taglinehere"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients__item">
               <a class="clients__name" href="#" aria-label="Company">
                 <svg class="clients__icon" width="44" height="41">
                   <use href="./images/icons.svg#icon-client-company"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients__item">
               <a class="clients__name" href="#" aria-label="Foster Peters">
                 <svg class="clients__icon" width="84" height="41">
                   <use href="./images/icons.svg#icon-client-fosterpeters"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients__item">
               <a class="clients__name" href="#" aria-label="Brand">
                 <svg class="clients__icon" width="63" height="45">
                   <use href="./images/icons.svg#icon-client-brand"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients__item">
               <a class="clients__name" href="#" aria-label="Ya & Co">
                 <svg class="clients__icon" width="94" height="45">
                   <use
@@ -504,7 +606,7 @@
       </section>
     </main>
     <!-- FOOTER -->
-    <footer class="page-footer">
+    <footer class="page-footer section">
       <div class="container page-footer__wrap">
         <div class="page-footer__links">
           <a href="index.html" class="logo page-footer__logo--color">
@@ -585,5 +687,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -13,17 +13,17 @@
     <header class="page-header">
       <div class="page-header__wrap container">
         <nav>
+          <div class="navigation__logo">
+            <a class="logo navigation__logo--color" href="./index.html">
+              <span class="logo__part">Web</span>Studio
+            </a>
+          </div>
           <ul class="navigation">
-            <li class="navigation__logo">
-              <a class="logo navigation__logo--color" href="./index.html">
-                <span class="logo__part">Web</span>Studio
-              </a>
+            <li class="navigation__reference">
+              <a class="navigation__link navigation__link--current" href="./index.html">Студія</a>
             </li>
             <li class="navigation__reference">
-              <a class="navigation__link" href="./index.html">Студія</a>
-            </li>
-            <li class="navigation__reference">
-              <a class="navigation__link navigation__link--current" href="./portfolio.html">Портфоліо</a>
+              <a class="navigation__link" href="./portfolio.html">Портфоліо</a>
             </li>
             <li class="navigation__reference">
               <a class="navigation__link" href="">Контакти</a>
@@ -46,6 +46,76 @@
             </a>
           </li>
         </ul>
+        <button class="menu-toggle js-open-menu"
+            type="button"
+            aria-expanded="false"
+            >
+            <svg width="40" height="40" aria-label="Меню сайту">
+              <use class="menu-toggle__icon" href="./images/icons.svg#menu"></use>
+            </svg>
+        </button>
+      </div>
+      <div class="menu-container js-menu-container" id="site-menu">
+        <button class="menu-toggle menu-toggle--position js-close-menu">
+          <svg width="40" height="40">
+            <use class="icon-cross" href="./images/icons.svg#cross"></use>
+          </svg>
+        </button>
+        <ul class="site-menu">
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="./index.html">Студія</a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-menu__link--current" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="#">Контакти</a>
+          </li>
+        </ul>
+        <div>
+          <ul class="contacts-menu">
+            <li class="contacts-menu__item">
+              <a class="contacts-menu__tel" href="tel:+380961111111">+38 096 111-11-11</a>
+            </li>
+            <li class="contacts-menu__item">
+              <a class="contacts-menu__mailto" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="socialnets-menu">
+            <li class="socialnets-menu__item">
+              <a class="socialnets-menu__link socialnets-menu__link--left"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >Instagram
+              </a>
+            </li>
+            <li class="socialnets-menu__item">
+              <a class="socialnets-menu__link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >Twitter
+              </a>
+            </li>
+            <li class="socialnets-menu__item">
+              <a class="socialnets-menu__link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >Facebook
+              </a>
+            </li>
+            <li class="socialnets-menu__item">
+              <a class="socialnets-menu__link socialnets-menu__link--right"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -74,11 +144,27 @@
             <li class="portfolio__card">
               <a class="portfolio__link" href="#">
                 <div class="portfolio__picture">
-                  <img
-                  src="./images/portfolio/technokrjak.jpg"
-                  alt="Зображення сторінки інтернета"
-                  width="370"
-                  height="294">
+                  <picture>
+                    <source 
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/tk-dt@1x.jpg 1x, ./images/portfolio/tk-dt@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/tk-tb@1x.jpg 1x, ./images/portfolio/tk-tb@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="./images/portfolio/tk-mb@1x.jpg 1x, ./images/portfolio/tk-mb@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <img class="portfolio__image"
+                      src="./images/portfolio/tk-mb@1x.jpg"
+                      alt="Зображення сторінки інтернета"
+                    >
+                  </picture>
                   <div class="portfolio__wrap">
                     <p class="portfolio__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -96,11 +182,27 @@
             <li class="portfolio__card">
               <a class="portfolio__link" href="#">
                 <div class="portfolio__picture">
-                  <img
-                  src="./images/portfolio/basketball.jpg"
-                  alt="Баскетболісти з м'ячем"
-                  width="370"
-                  height="294">
+                  <picture>
+                    <source 
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/nogs-dt@1x.jpg 1x, ./images/portfolio/nogs-dt@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/nogs-tb@1x.jpg 1x, ./images/portfolio/nogs-tb@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="./images/portfolio/nogs-mb@1x.jpg 1x, ./images/portfolio/nogs-mb@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <img class="portfolio__image"
+                      src="./images/portfolio/nogs-mb@1x.jpg"
+                      alt="Баскетболісти з м'ячем"
+                    >
+                  </picture>
                   <div class="portfolio__wrap">
                     <p class="portfolio__description">
                       Постер НБА Нью-Орлеан проти Сан Франциско Голден Стар. Тут
@@ -121,12 +223,27 @@
             <li class="portfolio__card">
               <a class="portfolio__link" href="#">
                 <div class="portfolio__picture">
-                  <img
-                    src="./images/portfolio/seafood.jpg"
-                    alt="Логотип рибного ресторану"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source 
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/sf-dt@1x.jpg 1x, ./images/portfolio/sf-dt@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/sf-tb@1x.jpg 1x, ./images/portfolio/sf-tb@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="./images/portfolio/sf-mb@1x.jpg 1x, ./images/portfolio/sf-mb@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <img class="portfolio__image"
+                      src="./images/portfolio/sf-mb@1x.jpg"
+                      alt="Логотип рибного ресторану"
+                    />
+                  </picture>
                   <div class="portfolio__wrap">
                     <p class="portfolio__description">
                       Тут про застосунок для ресторану Сіфуд. Далі вода про те
@@ -144,12 +261,27 @@
             <li class="portfolio__card">
               <a class="portfolio__link" href="#">
                 <div class="portfolio__picture">
-                  <img
-                    src="./images/portfolio/prime.jpg"
-                    alt="Навушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source 
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/pr-dt@1x.jpg 1x, ./images/portfolio/pr-dt@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/pr-tb@1x.jpg 1x, ./images/portfolio/pr-tb@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="./images/portfolio/pr-mb@1x.jpg 1x, ./images/portfolio/pr-mb@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <img class="portfolio__image"
+                      src="./images/portfolio/pr-mb@1x.jpg"
+                      alt="Навушники"
+                    />
+                  </picture>
                   <div class="portfolio__wrap">
                     <p class="portfolio__description">
                       Навушники. Ми самі не уявляємо чому. Виглядає стильно і
@@ -166,12 +298,27 @@
             <li class="portfolio__card">
               <a class="portfolio__link" href="#">
                 <div class="portfolio__picture">
-                  <img
-                    src="./images/portfolio/boxes.jpg"
-                    alt="Дві коробки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source 
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/bx-dt@1x.jpg 1x, ./images/portfolio/bx-dt@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/bx-tb@1x.jpg 1x, ./images/portfolio/bx-tb@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="./images/portfolio/bx-mb@1x.jpg 1x, ./images/portfolio/bx-mb@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <img class="portfolio__image"
+                      src="./images/portfolio/bx-mb@1x.jpg"
+                      alt="Дві коробки"
+                    />
+                  </picture>
                   <div class="portfolio__wrap">
                     <p class="portfolio__description">
                       Застосунок, де на обкладинці красиво
@@ -190,12 +337,27 @@
             <li class="portfolio__card">
               <a class="portfolio__link" href="#">
                 <div class="portfolio__picture">
-                  <img
-                    src="./images/portfolio/inspiration.jpg"
-                    alt="Монітор"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source 
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/ins-dt@1x.jpg 1x, ./images/portfolio/ins-dt@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/ins-tb@1x.jpg 1x, ./images/portfolio/ins-tb@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="./images/portfolio/ins-mb@1x.jpg 1x, ./images/portfolio/ins-mb@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <img class="portfolio__image"
+                      src="./images/portfolio/ins-mb@1x.jpg"
+                      alt="Монітор"
+                    />
+                  </picture>
                   <div class="portfolio__wrap">
                     <p class="portfolio__description">
                       Веб-сайт "Надхнення немає меж". Філософське. Мабуть, сайт
@@ -213,12 +375,27 @@
             <li class="portfolio__card">
               <a class="portfolio__link" href="#">
                 <div class="portfolio__picture">
-                  <img
-                    src="./images/portfolio/limited.jpg"
-                    alt="Журнал на сторінці з заголовком I'm limited edition"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source 
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/le-dt@1x.jpg 1x, ./images/portfolio/le-dt@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/le-tb@1x.jpg 1x, ./images/portfolio/le-tb@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="./images/portfolio/le-mb@1x.jpg 1x, ./images/portfolio/le-mb@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <img class="portfolio__image"
+                      src="./images/portfolio/le-mb@1x.jpg"
+                      alt="Журнал на сторінці з заголовком I'm limited edition"
+                    />
+                  </picture>
                   <div class="portfolio__wrap">
                     <p class="portfolio__description">
                       О. Тут круто. Нам довірили розробити дизайн лімітованої
@@ -237,12 +414,27 @@
             <li class="portfolio__card">
               <a class="portfolio__link" href="#">
                 <div class="portfolio__picture">
-                  <img
-                    src="./images/portfolio/lab.jpg"
-                    alt="Label TAG"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source 
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/lab-dt@1x.jpg 1x, ./images/portfolio/lab-dt@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/lab-tb@1x.jpg 1x, ./images/portfolio/lab-tb@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="./images/portfolio/lab-mb@1x.jpg 1x, ./images/portfolio/lab-mb@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <img class="portfolio__image"
+                      src="./images/portfolio/lab-mb@1x.jpg"
+                      alt="Label TAG"
+                    />
+                  </picture>
                   <div class="portfolio__wrap">
                     <p class="portfolio__description">
                       Проект ЛАБ. Це знов ніби не зрозуміло, але назва кричуща
@@ -260,12 +452,27 @@
             <li class="portfolio__card">
               <a class="portfolio__link" href="#">
                 <div class="portfolio__picture">
-                  <img
-                    src="./images/portfolio/business.jpg"
-                    alt="Фото лептопа з надписом Growing Business на мониторі"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source 
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/gb-dt@1x.jpg 1x, ./images/portfolio/gb-dt@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/gb-tb@1x.jpg 1x, ./images/portfolio/gb-tb@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="./images/portfolio/gb-mb@1x.jpg 1x, ./images/portfolio/gb-mb@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <img class="portfolio__image"
+                      src="./images/portfolio/gb-mb@1x.jpg"
+                      alt="Фото лептопа з надписом Growing Business на мониторі"
+                    />
+                  </picture>
                   <div class="portfolio__wrap">
                     <p class="portfolio__description">
                       Бізнес застосунок. Зростаючий бізнес. Для серйозних людей,
@@ -285,7 +492,7 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="page-footer">
+    <footer class="page-footer section">
       <div class="container page-footer__wrap">
         <div class="page-footer__links">
           <a href="index.html" class="logo page-footer__logo--color">
@@ -365,5 +572,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

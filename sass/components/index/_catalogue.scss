@@ -1,6 +1,10 @@
 .catalogue {
     padding-top: 0;
 
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
     &__title {
         font-weight: 700;
         font-size: 36px;
