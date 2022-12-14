@@ -2,17 +2,46 @@
     background-color: $background-color--hero;
 
     &__wrap {
-        display: block;
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (min-width: 1200px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &--position {
+
+            @media screen and (max-width: 1199px) {
+                padding-bottom: 60px;
+            }
+            
+            @media screen and (min-width: 768px) {
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+
     }
 
     &__links {
-        padding-bottom: 60px;
-        text-align: center;
+
+        @media screen and (max-width: 1199px) {
+            text-align: center;
+        }
+
+        @media screen and (max-width: 767px) {
+            padding-bottom: 60px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-right: 94px;
+        }
     }
     
     &__logo--color {
         color: $color--white-title;
         margin-bottom: 20px;
-      }
+    }
      
 }    

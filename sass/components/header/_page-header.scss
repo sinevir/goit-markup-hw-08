@@ -4,9 +4,17 @@
     &__wrap {
         @include centeredFlex(center);
         height: 60px;
-        // display: none;
-    //     display: flex;
-    //     align-items: center;
+
+        @media screen and (min-width: 768px) {
+            height: 80px;
+        }
+
+        //     display: flex;
+        //     align-items: center;
+    }
+
+    &__nav {
+        display: flex;
     }
 }
   

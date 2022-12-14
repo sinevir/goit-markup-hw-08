@@ -3,10 +3,23 @@
     width: 206px;
     // padding-top: 72px;
     // margin-left: 93px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 60px; 
+    
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin: 5px 0 0 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin: 12px 0 0 0;
+    }
+
+
 
     &__title {
         font-weight: 700;

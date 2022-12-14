@@ -1,13 +1,13 @@
 .navigation {
-    // display: flex;
-    display: none;
+    display: flex;
     @extend %list;
-    outline: 1px solid teal;
     
-
     &__logo {
-    //     // margin-right: 93px;
-    //     // padding: 24px 0 25px 0;
+        // margin-right: 93px;
+        // padding: 24px 0 25px 0;
+        display: flex;
+        align-items: center;
+        margin-right: 87px;
 
         &--color {
             color: #000000;
@@ -15,10 +15,10 @@
     }
 
     &__link {
-    //     position: relative;
-    //     display: block;
-    //     padding-top: 32px;
-    //     padding-bottom: 32px;
+        position: relative;
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
         color: $color--dark-title;
         font-weight: 500;
         line-height: 1.143;
@@ -29,21 +29,25 @@
         &--current {
             color: $color--second-text;
     
-            // &::after {
-            //     position: absolute; 
-            //     display: block;
-            //     content: " ";
-            //     width: 100%;
-            //     height: 4px;
-            //     bottom: 0;
-            //     border-radius: 2px;
-            //     background-color: $background-color--active-button;
-            // }
+            &::after {
+                position: absolute; 
+                display: block;
+                content: " ";
+                width: 100%;
+                height: 4px;
+                bottom: 0;
+                border-radius: 2px;
+                background-color: $background-color--active-button;
+            }
         }
     }
 
-    // &__reference:not(last-child) {
-    //     margin-right: 50px;
-    // }
+    &__reference:not(:last-child) {
+        margin-right: 50px;
+    }
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
 }
   

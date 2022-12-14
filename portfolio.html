@@ -12,7 +12,7 @@
     <!-- HEADER -->
     <header class="page-header">
       <div class="page-header__wrap container">
-        <nav>
+        <nav class="page-header__nav">
           <div class="navigation__logo">
             <a class="logo navigation__logo--color" href="./index.html">
               <span class="logo__part">Web</span>Studio
@@ -20,10 +20,10 @@
           </div>
           <ul class="navigation">
             <li class="navigation__reference">
-              <a class="navigation__link navigation__link--current" href="./index.html">Студія</a>
+              <a class="navigation__link" href="./index.html">Студія</a>
             </li>
             <li class="navigation__reference">
-              <a class="navigation__link" href="./portfolio.html">Портфоліо</a>
+              <a class="navigation__link navigation__link--current" href="./portfolio.html">Портфоліо</a>
             </li>
             <li class="navigation__reference">
               <a class="navigation__link" href="">Контакти</a>
@@ -63,10 +63,10 @@
         </button>
         <ul class="site-menu">
           <li class="site-menu__item">
-            <a class="site-menu__link" href="./index.html">Студія</a>
+            <a class="site-menu__link--current" href="./index.html">Студія</a>
           </li>
           <li class="site-menu__item">
-            <a class="site-menu__link--current" href="./portfolio.html">Портфоліо</a>
+            <a class="site-menu__link" href="./portfolio.html">Портфоліо</a>
           </li>
           <li class="site-menu__item">
             <a class="site-menu__link" href="#">Контакти</a>
@@ -493,61 +493,63 @@
 
     <!-- FOOTER -->
     <footer class="page-footer section">
-      <div class="container page-footer__wrap">
-        <div class="page-footer__links">
-          <a href="index.html" class="logo page-footer__logo--color">
-            <span class="logo__part">Web</span>Studio
-          </a>
-          <address>
-            <ul class="adress-list">
-              <li class="adress-list__item">
-                <a class="adress-list__map"
-                  href="https://goo.gl/maps/ySmGjcdxqGTYYULQ9"
-                  target="_blank"
-                  rel="noreferrer noopener nofollow">м. Київ, пр-т Лесі Українки, 26
+      <div class="page-footer__wrap container">
+        <div class="page-footer__wrap--position">
+          <div class="page-footer__links">
+            <a href="index.html" class="logo page-footer__logo--color">
+              <span class="logo__part">Web</span>Studio
+            </a>
+            <address>
+              <ul class="adress-list">
+                <li class="adress-list__item">
+                  <a class="adress-list__map"
+                    href="https://goo.gl/maps/ySmGjcdxqGTYYULQ9"
+                    target="_blank"
+                    rel="noreferrer noopener nofollow">м. Київ, пр-т Лесі Українки, 26
+                  </a>
+                </li>
+                <li class="adress-list__item">
+                  <a class="adress-list__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li class="adress-list__item">
+                  <a class="adress-list__link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="join">
+            <h3 class="join__title">приєднуйтесь</h3>
+            <ul class="networks">
+              <li>
+                <a class="networks__button join__button--color" href="#" aria-label="Instagram">
+                  <svg class="networks__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-social-instagram"></use>
+                  </svg>
                 </a>
               </li>
-              <li class="adress-list__item">
-                <a class="adress-list__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <li>
+                <a class="networks__button join__button--color" href="#" aria-label="Instagram">
+                  <svg class="networks__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-social-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="adress-list__item">
-                <a class="adress-list__link" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li>
+                <a class="networks__button join__button--color" href="#" aria-label="Instagram">
+                  <svg class="networks__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-social-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="networks__button join__button--color" href="#" aria-label="Instagram">
+                  <svg class="networks__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-social-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="join">
-          <h3 class="join__title">приєднуйтесь</h3>
-          <ul class="networks">
-            <li>
-              <a class="networks__button join__button--color" href="#" aria-label="Instagram">
-                <svg class="networks__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-social-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="networks__button join__button--color" href="#" aria-label="Instagram">
-                <svg class="networks__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-social-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="networks__button join__button--color" href="#" aria-label="Instagram">
-                <svg class="networks__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-social-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="networks__button join__button--color" href="#" aria-label="Instagram">
-                <svg class="networks__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-social-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <form name="mailing-list" autocomplete="on">
           <div class="subscription">
