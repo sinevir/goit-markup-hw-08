@@ -1624,6 +1624,9 @@ img {
   color: #FFFFFF;
 }
 .portfolio__name {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding: 20px 24px;
   border-width: 0px 1px 1px 1px;
   border-color: #EEEEEE;
