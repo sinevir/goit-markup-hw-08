@@ -113,6 +113,7 @@
 
     &__terms-icon {
         display: inline-block;
+        flex-shrink: 0;
         width: 16px;
         height: 15px;
         border: 2px solid $color--dark-title;

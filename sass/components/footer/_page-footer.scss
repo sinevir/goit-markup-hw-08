@@ -1,4 +1,5 @@
 .page-footer {
+    padding: 60px 0;
     background-color: $background-color--hero;
 
     &__wrap {
@@ -19,6 +20,7 @@
             @media screen and (min-width: 768px) {
                 display: flex;
                 justify-content: space-around;
+                align-items: baseline;
             }
         }
 
